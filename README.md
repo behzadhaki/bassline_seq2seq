@@ -8,6 +8,12 @@ A generative model based on word-based sequence-to-sequence learning method. The
 
 Used for my thesis project, access report at: [WILL BE PUBLISHED LATER]
 
+# Note:
+The following tutorial was used in developing this project. Reviewing the tutorial is highly advised before using the scripts available in this project
+
+
+Tutorial: https://machinelearningmastery.com/develop-encoder-decoder-model-sequence-sequence-prediction-keras/
+
 # How To Use:
 ## Step 1: Prepare Data
 The drum representation we propose is a list of time-quantized onset vectors ineight distinct frequency bands (B1 to B8): 40-70Hz, 70-110Hz, 130-145Hz, 160-190Hz, 300-400Hz, 5-7kHz, 7-10kHz and 10-15kHz.  Quantized to 16th-notetime steps and having a duration of 2 bars, the drums need to be represented at 32 different time steps. Hence, the drum representations used are a 32x8 matrix of onsets. On the other hand, the bassline is a vector of 32x1 where thenth entry identifies whether a note starts (or should be sustained) at the nth timestep. 
@@ -23,6 +29,14 @@ For every entry in the datasets, each bassline vector and each drum vector shoul
 /data/bassline_size_50[WithOffet]_translated_to_midi_36-2bars.txt
 /data/drum_size_50.txt
 
-## Step 2: Training
-Open the following Jupyter notebook: /src/Train.ipynb
+## Step 2: Train
+Follow the steps provided in the following Jupyter notebook: /src/Train.ipynb
+
+## Step 3: Predict
+In the same manner as Step 1, create a text file containing the drum patterns for which a bassline should be predicted
+
+Follow the steps provided in the following Jupyter notebook: /src/Predict.ipynb
+
+
+
 
