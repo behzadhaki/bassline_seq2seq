@@ -37,6 +37,7 @@ In the same manner as Step 1, create a text file containing the drum patterns fo
 
 Follow the steps provided in the following Jupyter notebook: /src/Predict.ipynb
 
-
+#### In this repository, a sample test dataset is provided for testing the code. The dataset can be found at:
+/data_test/drum_size_15.txt
 
 
