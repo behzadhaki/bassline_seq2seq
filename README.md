@@ -16,7 +16,7 @@ Tutorial: https://machinelearningmastery.com/develop-encoder-decoder-model-seque
 
 # How To Use:
 ## Step 1: Prepare Data
-The drum representation we propose is a list of time-quantized onset vectors ineight distinct frequency bands (B1 to B8): 40-70Hz, 70-110Hz, 130-145Hz, 160-190Hz, 300-400Hz, 5-7kHz, 7-10kHz and 10-15kHz.  Quantized to 16th-notetime steps and having a duration of 2 bars, the drums need to be represented at 32 different time steps. Hence, the drum representations used are a 32x8 matrix of onsets. On the other hand, the bassline is a vector of 32x1 where thenth entry identifies whether a note starts (or should be sustained) at the nth timestep. 
+The drum representation we propose is a list of time-quantized onset vectors in eight distinct frequency bands (B1 to B8): 40-70Hz, 70-110Hz, 130-145Hz, 160-190Hz, 300-400Hz, 5-7kHz, 7-10kHz and 10-15kHz.  Quantized to 16th-notetime steps and having a duration of 2 bars, the drums need to be represented at 32 different time steps. Hence, the drum representations used are a 32x8 matrix of onsets. On the other hand, the bassline is a vector of 32x1 where thenth entry identifies whether a note starts (or should be sustained) at the nth timestep. 
 
 For every entry in the datasets, each bassline vector and each drum vector should be prepared based on the drum and bassline transcriptions described above, so as to be used for designing and implementing the models. In short, each bassline and drum vector should be prepared as follows:
 
